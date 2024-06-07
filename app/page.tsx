@@ -12,7 +12,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
  
-export function DialogDemo() {
+ function DialogDemo() {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -58,6 +58,7 @@ export function DialogDemo() {
 export default function Home() {
   return (
     <>
+    <DialogDemo/>
     <section className="flex gap-5 justify-center items-center w-full h-full ">
       <div>
         <div>
