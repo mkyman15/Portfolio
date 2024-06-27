@@ -16,21 +16,21 @@ const projectData: any = [
     description:
       "This duckhunt is a project trying to replicate Duck Hunt by using replit. I used many languages such as JavaScript, Html, Canvas Api for images, css, and object orienting programing.",
     imageSrc: "/DuckHunt.png",
-    linkUrl: "/",
+    linkUrl: "https://replit.com/@mkyman15/Duck-Hunt#scripts/platformer.js",
   },
   {
     title: "News Sentiment Analysis",
     description:
       "Using replit and mutiple existing libraries such as beautiful soup and textblob I developed a webscarper that performed sentiment analysis including bias checking. ",
-    imageSrc: "DuckHunt.png",
-    linkUrl: "/",
+    imageSrc: "/fine.png",
+    linkUrl: "https://replit.com/@Ahljennetics/NewsSentimentAnalysis",
   },
   {
     title: "Your Fortune",
     description:
       "More of a side project I tried practicing using files to store data for each user that interacted with the site. That way when given a fortune you only get one a day.",
-    imageSrc: "/DuckHunt.png",
-    linkUrl: "/",
+    imageSrc: "/fortune.jpg",
+    linkUrl: "https://replit.com/@mkyman15/Your-Fortune",
   },
 ];
 
@@ -57,15 +57,14 @@ function Showcase({ showcaseTitle, direction, showcaseData }: any) {
                   <div className="flex gap-5">
                     {/* Left section */}
                     <div>
-                      <Link href="/">
+                      <Link href={item.linkUrl}>
                         <Image
-                          src="/DuckHunt.png"
+                          src={item.imageSrc}
                           width="400"
                           height="400"
                           alt="person programming"
                         />
                       </Link>
-
                       <p className="text-xl font-bold">{item.title}</p>
                     </div>
 
