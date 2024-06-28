@@ -52,9 +52,9 @@ function Showcase({ showcaseTitle, direction, showcaseData }: any) {
           <SheetTitle>{showcaseTitle}</SheetTitle>
           <SheetDescription>
             <section className="flex flex-col gap-10 justify-between content-between h-full">
-              {showcaseData.map((item) => {
+              {showcaseData.map((item: any) => {
                 return (
-                  <div className="flex gap-5">
+                  <div className="flex gap-5" key={item.title}>
                     {/* Left section */}
                     <div>
                       <Link href={item.linkUrl}>
@@ -90,7 +90,7 @@ export default function Home() {
         <div>
           <div>
             <Showcase
-              showcaseTitle="College"
+              showcaseTitle="college"
               direction="left"
               showcaseData={collegeData}
             />
