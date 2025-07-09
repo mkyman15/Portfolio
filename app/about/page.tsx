@@ -9,7 +9,10 @@ export default function AboutPage() {
         <div className="flex gap-64">
           {langs.map((item: any) => {
             return (
-              <div className="flex flex-col justify-center gap-2 items-center">
+              <div
+                className="flex flex-col justify-center gap-2 items-center"
+                key={item.title}
+              >
                 <Image
                   src={item.imageSrc}
                   width="200"
